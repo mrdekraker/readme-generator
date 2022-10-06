@@ -1,9 +1,12 @@
+const fs = require(`fs`);
 // If there is no license, return an empty string
 const renderLicenseBadge = (license) => {
   if (!license) {
     return '';
   }
-  return `![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)`;
+  return `[![${license} license](https://img.shields.io/badge/License-${license}-blue.svg)](${renderLicenseLink(
+    license
+  )})`;
 };
 
 // If there is no license, return an empty string

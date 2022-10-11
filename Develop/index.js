@@ -144,6 +144,20 @@ const questions = [
       return false;
     },
   },
+  {
+    type: `input`,
+    name: `credits`,
+    message: `Please list any collaborators, third-party assets, or tutorials used:`,
+    validate: (creditsResponse) => {
+      if (creditsResponse) {
+        return true;
+      }
+      console.log(
+        `Please list any collaborators, third-party assets, or tutorials used:`
+      );
+      return false;
+    },
+  },
 ];
 
 // TODO: Create a function to write README file

@@ -1,27 +1,16 @@
-const fs = require(`fs`);
-// If there is no license, return an empty string
 const renderLicenseBadge = (license) => {
-  if (!license) {
-    return '';
-  }
-  return `[![${license} license](https://img.shields.io/badge/License-${license}-blue.svg)](${renderLicenseLink(
-    license
-  )})`;
-};
-
-// If there is no license, return an empty string
-const renderLicenseLink = (license) => {
+  // render license badge
   if (license === `MIT`) {
-    return `https://opensource.org/licenses/MIT`;
+    return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
   }
   if (license === `Apache`) {
-    return `https://opensource.org/licenses/Apache-2.0`;
+    return `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
   }
   if (license === `GPL`) {
-    return `https://opensource.org/licenses/GPL-3.0`;
+    return `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`;
   }
   if (license === `BSD`) {
-    return `https://opensource.org/licenses/BSD-3-Clause`;
+    return `[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)`;
   }
   return ``;
 };
@@ -38,7 +27,7 @@ const renderLicenseSection = (license) => {
 function generateMarkdown(data) {
   return `# ${data.title}
   
-  ${renderLicenseBadge(data.licenses)}
+  ${renderLicenseBadge(data.license)}
   
   ## Table of Contents
   * [Description](#description)
@@ -69,7 +58,9 @@ function generateMarkdown(data) {
 
   ## Questions
   If you have any questions, please contact me at 
-  ${data.email} or visit my GitHub page at [${data.github}]
+  ${data.email} or visit my GitHub page at my [${
+    data.github
+  }](https://github.com/${data.github}]).
 
   ## Credits
   ${data.credits}

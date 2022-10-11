@@ -1,6 +1,6 @@
-# README Generator
+# readme generator
   
-  
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
   ## Table of Contents
   * [Description](#description)
@@ -13,26 +13,26 @@
   * [Credits](#credits)
   
   ## Description
-  This project was designed to automate professional README.md files for projects by filling out simple generated questions.
+  n/a
   
   
 
   ## Installation
-  Make sure you have npm installed. `npm install`
+  n/a
   
   ## Usage
-  After cloning the code to your local machine, 1. NPM init. 2. CD to the appropriate pathway, and type 'node index.js' and follow the prompts
+  n/a
   
   ## Contributing
-  If you have other ideas feel
+  n/a
 
   ## Tests
-   to clone it, please include a link to my github account to give credit. @mrdekraker
+  n/a
 
   ## Questions
   If you have any questions, please contact me at 
-  mrdekraker@gmail.com or visit my GitHub page at [mrdekraker]
+  mrdekraker@gmail.com or visit my GitHub page at my [mrdekraker](https://github.com/mrdekraker]).
 
   ## Credits
-  undefined
+  n/a
   

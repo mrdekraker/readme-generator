@@ -38,7 +38,7 @@ You will be prompted with a series of questions. Answer each question, and your 
 
 ## Instructions
 
-If you would like to view how to install and use, go to the following link:
+If you would like to view how to install and use, go to the following link: (https://youtu.be/Ce3QQVJ3-jg)
 
 ---
 
